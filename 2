@@ -1,0 +1,22 @@
+
+t= int(input())
+if t>=1 and t<=10**5:
+    while t>0:
+        n,d=[int(x) for x in input().split()]
+        if n>=1 and n<=10**9 and d>=0 and d<=9:
+            x = n
+            rem = 0
+            count = 0
+            c = 0
+            while x>0:
+                rem = x % 10
+                x = x // 10
+                c = c+1 
+                if rem==d:
+                    x = x*pow(10,c)+(rem+1)*pow(10,c-1)
+                    count = x -n
+                    c = 0
+            print(count)
+            
+        t=t-1
+        
