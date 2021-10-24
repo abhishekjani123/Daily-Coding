@@ -1,0 +1,5 @@
+t=int(input())
+while t>0:
+    x,k=[int(x) for x in input().split()]
+    print(str(x*2) + " " + str(x*k*(x*k-1)))
+    t=t-1
