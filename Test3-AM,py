@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    x,k = map(int,input().split())
+    k1 = kx
+    min_ans = x2
+    max_ans = ((k1)*(k1-1))
+    print(min_ans,max_ans)
